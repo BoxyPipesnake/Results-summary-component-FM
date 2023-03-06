@@ -1,0 +1,11 @@
+@import "variables";
+
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+    font-weight: 500 800;
+}
+
+body {
+    font-family: $font-family, 'Times New Roman', Times, serif;
+}
