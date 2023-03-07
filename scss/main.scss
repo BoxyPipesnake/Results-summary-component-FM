@@ -1,4 +1,5 @@
 @import "variables";
+//@use 'variables';
 
 @font-face {
     font-family: "Hanken Grotesk";
@@ -6,6 +7,19 @@
     font-weight: 500 800;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: $font-family, 'Times New Roman', Times, serif;
+    background-color: $violet-blue;
 }
+
+

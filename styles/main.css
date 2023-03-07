@@ -3,6 +3,17 @@
   src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
   font-weight: 500 800;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Hanken Grotesk", "Times New Roman", Times, serif;
+  background-color: hsl(256, 72%, 46%);
 }/*# sourceMappingURL=main.css.map */
