@@ -1,5 +1,5 @@
-@import "variables";
-//@use 'variables';
+@use 'variables' as v;
+
 
 @font-face {
     font-family: "Hanken Grotesk";
@@ -11,15 +11,72 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: v.$font-family;
 }
 
 a {
     text-decoration: none;
 }
 
-body {
-    font-family: $font-family, 'Times New Roman', Times, serif;
-    background-color: $violet-blue;
+h1 {
+    color: v.$light-lavender;
+    font-size: 1.1rem;
 }
 
+p {
+    font-size: v.$font-size;
+}
 
+span {
+    display: block;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;;
+}
+
+.wrapper {
+
+    .score {
+        //background-color: v.$cobalt-blue;
+        background: linear-gradient(v.$light-slate-blue, v.$light-royal-blue);
+        text-align: center;
+        padding: 2rem;
+        border-bottom-left-radius: 31px;
+        border-bottom-right-radius: 31px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.score__punctuation{
+    background-color: red;
+    background: linear-gradient(v.$violet-blue, v.$persian-blue);
+    border-radius: 58%;
+    padding: 1.7rem;
+    width: 130px;
+
+    span:first-child {
+        font-size: 3rem;
+        font-weight: 900;
+        color: v.$white;
+    }
+
+    span:nth-child(2) {
+        color: v.$light-lavender;
+        font-weight: 900;
+    }
+
+}
+
+.score__phrase {
+    color: v.$white;
+}
+
+.score__review{
+    color: v.$light-lavender;
+}
