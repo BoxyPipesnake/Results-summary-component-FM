@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .wrapper .score {
@@ -98,6 +99,9 @@ body {
   font-weight: 900;
   font-size: 1.125rem;
 }
+.summary__content .btn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
 
 .category {
   background-color: hsl(221, 100%, 96%);
@@ -134,4 +138,42 @@ body {
   color: hsl(224, 30%, 27%);
   font-weight: bold;
   margin-right: 0.3rem;
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    box-shadow: 0px 1px 21px 1px #ccc;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 725px;
+    border-radius: 31px;
+    overflow: hidden;
+  }
+  .wrapper .score {
+    border-top-right-radius: 31px;
+    justify-content: space-between;
+    padding: 3.1rem;
+  }
+  .score h1 {
+    font-size: 1.3rem;
+  }
+  .score .score__phrase {
+    font-size: 30px;
+  }
+  .score .score__punctuation {
+    padding: 3.7rem;
+    width: 200px;
+  }
+  .summary {
+    padding: 3rem;
+  }
+  .summary__content .summary__heading {
+    font-size: 1.5rem;
+  }
+  .summary__content .btn {
+    font-size: 1.2rem;
+  }
+  .category, .points {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
